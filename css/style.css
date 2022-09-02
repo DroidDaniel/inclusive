@@ -409,11 +409,17 @@ nav {
 
 .works__list_title{
   font-size: 32px;
+  line-height: 30px;
   font-weight: bold;
-  max-width: 280px;
+  max-width: 320px;
   position: relative;
   border-left: solid 12px #f57826;
   padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.works__list_title-big{
+  max-width: 350px;
 }
 
 .works__list_info{
