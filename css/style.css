@@ -488,8 +488,18 @@ nav {
   background-color: #001c39;
 }
 
-.img-mb{
+.img-mb,
+.img-lg{
   display: none;
+}
+
+@media screen and (min-width:1600px) {
+  .img-dktp{
+    display: none;
+  }
+  .img-lg{
+    display: block;
+  }
 }
 
 @media screen and (max-width:600px) {
