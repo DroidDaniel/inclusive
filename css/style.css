@@ -442,9 +442,17 @@ nav {
 /***********Carousel**************/
 .carosel{
   background-color: #001c39;
-  height: 100vh;
 }
 
-.carousel-inner img{
-  margin: 60px auto;
+.img-mb{
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .img-dktp{
+    display: none;
+  }
+  .img-mb{
+    display: block;
+  }
 }
