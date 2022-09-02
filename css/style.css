@@ -251,7 +251,7 @@ nav {
 .im_title {
   text-align: center;
   color: #f57826;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 26px;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -409,7 +409,7 @@ nav {
 .works__list_title{
   font-size: 32px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 900;
   max-width: 320px;
   position: relative;
   border-left: solid 12px #f57826;
