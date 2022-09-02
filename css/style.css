@@ -72,18 +72,32 @@ nav {
   height: 2px;
   display: block;
   content: "";
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  transition: -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  -o-transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
   transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s, -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
 }
 
 .nav_menu_ul li a:hover {
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
 .nav_menu_ul li a:hover::after {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  transition: -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  -o-transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
   transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
+  transition: transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s, -webkit-transform 0.2s cubic-bezier(0.47, 0.07, 0.21, 1.4) 0.1s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,7 +124,9 @@ nav {
     right: 0;
   }
   .nav_menu_ul li a:hover::after {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
   }
 }
 
@@ -152,7 +168,8 @@ nav {
   }
   .banner_video video {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -446,13 +463,19 @@ nav {
 }
 
 .works__list_detail{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media screen and (max-width:992px) {
   .works__list_detail{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -496,6 +519,10 @@ nav {
   position: relative;
   text-transform: uppercase;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 40px auto;
 }
 
 .process_wrapper{
@@ -509,7 +536,7 @@ nav {
   width: 40px;
   height: 5px;
   background-color: #f57826;
-  left: 49%;
+  left: 40%;
   bottom: 50px;
   border-radius: 5px;
 }
