@@ -440,6 +440,7 @@ nav {
   border-left: solid 12px #f57826;
   padding-left: 15px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .works__list_title-big{
@@ -553,7 +554,7 @@ nav {
 
 @media screen and (max-width:600px) {
   .fellow_im_title::before{
-    left: 42%;
+    left: 36%;
   }
 }
 
